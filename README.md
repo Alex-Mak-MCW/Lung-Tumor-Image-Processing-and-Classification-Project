@@ -1,6 +1,6 @@
 # Lung Tumor Image Processing and Classification Project
 
-This project applies deep learning to detect and classify lung tumors into benign, malignant, or normal cases using grayscale medical images. It employs various Convolutional Neural Network (CNN) architectures, including custom CNNs, MobileNetV1, and EfficientNetB0, to achieve robust classification.
+This project applies deep learning to detect and classify lung tumors into benign, malignant, or normal cases in medical images. It employs various Convolutional Neural Network (CNN) architectures, including custom CNNs, MobileNetV1, and EfficientNetB0, to achieve robust classification.
 
 ## Key Features:
 
@@ -24,4 +24,4 @@ This project applies deep learning to detect and classify lung tumors into benig
    - Models saved in Keras format for easy reloading and inference.
    - Example usage of the trained models to predict unseen test cases and verify performance consistency.
 
-This repository showcases a complete pipeline for medical image classification, emphasizing both reproducibility and scalability.
+This codebase showcases a complete pipeline for medical image classification, emphasizing both reproducibility and scalability.
