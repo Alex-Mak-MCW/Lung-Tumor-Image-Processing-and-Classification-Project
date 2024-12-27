@@ -25,3 +25,42 @@ This project applies deep learning to detect and classify lung tumors into benig
    - Example usage of the trained models to predict unseen test cases and verify performance consistency.
 
 This codebase showcases a complete pipeline for medical image classification, emphasizing both reproducibility and scalability.
+
+
+## Results:
+
+### Table I. Overall Classification Performance for Each Model
+
+| Model          | Classification Accuracy | Specificity | Sensitivity |
+|----------------|--------------------------|-------------|-------------|
+| CNN            | 94.85%                  | 0.9739      | 0.8762      |
+| MobileNetV1    | 93.03%                  | 0.9626      | 0.7943      |
+| EfficientNetB0 | 96.36%                  | 0.9810      | 0.8955      |
+
+### Table II. Computational Resources Consumed for Each Model
+
+| Model          | Total Parameters    | Trainable Parameters | Non-trainable Parameters |
+|----------------|---------------------|-----------------------|--------------------------|
+| CNN            | 494,547 (1.89 MB)  | 494,547 (1.89 MB)    | 0 (0.00 B)              |
+| MobileNetV1    | 3,231,969 (12.33 MB) | 3,210,081 (12.25 MB) | 21,888 (85.50 KB)       |
+| EfficientNetB0 | 4,053,444 (15.46 MB) | 4,011,421 (15.30 MB) | 42,023 (164.16 KB)      |
+
+### Table III. Summary of Model's Performance in Each Class
+
+| Model          | Class            | Precision | Recall | F1-Score |
+|----------------|------------------|-----------|--------|----------|
+| CNN            | Benign           | 0.68      | 0.68   | 0.75     |
+|                | Malignant        | 0.99      | 0.99   | 0.99     |
+|                | Normal           | 0.91      | 0.97   | 0.94     |
+|                | Macro Average    | 0.92      | 0.88   | 0.89     |
+|                | Weighted Average | 0.95      | 0.95   | 0.95     |
+| MobileNetV1    | Benign           | 1.00      | 1.00   | 1.00     |
+|                | Malignant        | 1.00      | 0.99   | 1.00     |
+|                | Normal           | 0.84      | 1.00   | 0.91     |
+|                | Macro Average    | 0.95      | 0.79   | 0.82     |
+|                | Weighted Average | 0.94      | 0.93   | 0.95     |
+| EfficientNetB0 | Benign           | 0.96      | 0.69   | 0.80     |
+|                | Malignant        | 1.00      | 1.00   | 1.00     |
+|                | Normal           | 0.92      | 0.99   | 0.95     |
+|                | Macro Average    | 0.96      | 0.92   | 0.96     |
+|                | Weighted Average | 0.96      | 0.96   | 0.96     |
