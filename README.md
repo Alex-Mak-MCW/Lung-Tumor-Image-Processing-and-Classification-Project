@@ -22,10 +22,7 @@ This project applies deep learning to detect and classify lung tumors into benig
 
 5. **Deployment**:
    - Models saved in Keras format for easy reloading and inference.
-   - Example usage of the trained models to predict unseen test cases and verify performance consistency.
-
-This codebase showcases a complete pipeline for medical image classification, emphasizing both reproducibility and scalability.
-
+   - Verify performance consistency using trained models to predict unseen test cases.
 
 ## Results:
 
@@ -64,3 +61,5 @@ This codebase showcases a complete pipeline for medical image classification, em
 |                | Normal           | 0.92      | 0.99   | 0.95     |
 |                | Macro Average    | 0.96      | 0.92   | 0.96     |
 |                | Weighted Average | 0.96      | 0.96   | 0.96     |
+
+## If you are interested to see my academic research report, please contact me!
